@@ -1,0 +1,31 @@
+.filter-container {
+    width: 200px; /* Reduce the width */
+    margin-left: 10px; /* Adjust to the left side */
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Add spacing between items */
+  }
+  
+  .filter-item {
+    display: flex;
+    flex-direction: column; /* Stack the category name, "ALL", and the down arrow vertically */
+    align-items: flex-start; /* Align the text and arrow to the left */
+    font-size: 14px; /* Reduce font size */
+    font-weight: 500;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd; /* Add a subtle border for separation */
+    padding: 5px 0;
+  }
+  
+  .filter-item .all-option {
+    font-size: 12px; /* Slightly smaller font for "ALL" */
+    color: #888; /* Subtle color for "ALL" */
+    
+  }
+  
+  .down-arrow {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  

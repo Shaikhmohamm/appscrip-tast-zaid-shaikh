@@ -1,0 +1,52 @@
+/* Default layout with filter visible */
+.products-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Filter (1/4th) and Products (3/4th) */
+    gap: 20px;
+  }
+  
+  .filter-section {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    height: fit-content;
+  }
+  
+  /* Main content with filter visible */
+  .main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 products per row */
+    gap: 20px;
+  }
+  
+  /* Layout adjustment when filter is hidden */
+  .products-layout.no-filter {
+    grid-template-columns: 1fr; /* No extra column for filter */
+  }
+  
+  .products-layout.no-filter .main-content {
+    grid-template-columns: repeat(4, 1fr); /* 4 products per row when filter is hidden */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .products-layout {
+      grid-template-columns: 1fr; /* Stack filter and products vertically */
+    }
+  
+    .main-content {
+      grid-template-columns: repeat(2, 1fr); /* 2 products per row on medium screens */
+    }
+  
+    .products-layout.no-filter .main-content {
+      grid-template-columns: repeat(3, 1fr); /* 3 products per row on medium screens when filter is hidden */
+    }
+  
+    @media (max-width: 480px) {
+      .main-content {
+        grid-template-columns: 1fr; /* 1 product per row on small screens */
+      }
+    }
+  }
+  

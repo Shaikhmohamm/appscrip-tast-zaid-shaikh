@@ -1,0 +1,33 @@
+
+.bottom-nav {
+    padding: 15px 0; 
+    text-align: center;
+    border-bottom: 1px solid gainsboro;
+  }
+  
+  .nav-list {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  
+  .nav-item {
+    font-size: 20px; 
+    font-weight: 500;
+    color: #333; 
+    cursor: pointer; 
+    font-weight: bold;
+  }
+
+
+  @media (max-width : 768px) {
+    .bottom-nav {
+      display: none;
+    }
+  }
+
+  

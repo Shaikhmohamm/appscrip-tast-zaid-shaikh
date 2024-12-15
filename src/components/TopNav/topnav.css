@@ -1,0 +1,45 @@
+.main { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.main2 {
+    display: flex;
+    justify-content: start;
+    font-size: 20px;
+    gap: 15px;
+}
+
+.logo {
+    font-weight: bold;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img {
+    font-size: x-large;
+}
+
+
+.toggle {
+    font-size: x-large;
+}
+
+@media (min-width: 768px) {
+    .toggle {
+      display: none;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .to-hide-mobile {
+      display: none;
+    }
+  }

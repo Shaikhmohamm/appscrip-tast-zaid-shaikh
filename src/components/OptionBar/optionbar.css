@@ -1,0 +1,49 @@
+/* Options Bar Styling */
+.options-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f5f5f5;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Hide/Show Filter Button */
+.toggle-filter-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Dropdown Styling */
+.sort-dropdown {
+    padding: 8px 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    outline: none;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small screens (e.g., max-width: 640px) */
+@media (max-width: 640px) {
+  .toggle-filter-btn {
+    pointer-events: none; 
+    opacity: 0.5; 
+    cursor: not-allowed;
+  }
+  .sort-dropdown {
+    padding: 5px 5px;
+    font-size: 12px;
+  }
+}
+
